@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -400,6 +401,9 @@ padding: 0 24px;
   color: #111827;
   font-weight: 600;
 }
+#Personal_Details span {
+  color: #475569;
+}
 @media (max-width: 700px) {
 
   #Personal_Details {
@@ -478,7 +482,7 @@ padding: 0 24px;
 }
 
 /* ========================= */
-/* Portfolio Links  */
+/* Portfolio Links */
 
 .pf-section{
   max-width: 970px;
@@ -514,4 +518,90 @@ padding: 0 24px;
   .pf-link {
     justify-content: center;
   }
+}
+
+/* ============================= */
+/* Theme  Button */
+
+.Dark-theme {
+  background: none;
+  border: 1px solid #e5e7eb;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ============================= */
+
+[live-theme="dark"] .Dark-theme {
+  color: #e5e7eb;
+  border-color: #1e293b;
+}
+
+[live-theme="dark"] body {
+  background-color: #020617;
+  color: #e5e7eb;
+}
+
+[live-theme="dark"] #Personal_Details strong {
+  color: #e5e7eb;
+}
+
+[live-theme="dark"] #Personal_Details span {
+  color: #94a3b8;
+}
+
+[live-theme="dark"] 
+.head1 {
+  background-color: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+[live-theme="dark"] .navbar a {
+  color: #cbd5e1;
+}
+
+[live-theme="dark"] .navbar a:hover {
+  color: #3b82f6;
+}
+
+[live-theme="dark"] .section,
+[live-theme="dark"] .education,
+[live-theme="dark"] .p-card,
+[live-theme="dark"] #Skills-Tools,
+[live-theme="dark"] .A-box {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
+
+[live-theme="dark"] h2,
+[live-theme="dark"] h3,
+[live-theme="dark"] h4 {
+  color: #e5e7eb;
+}
+
+[live-theme="dark"] p,
+[live-theme="dark"] li {
+  color: #94a3b8;
+}
+
+[live-theme="dark"] .year,
+[live-theme="dark"] .p-tech {
+  color: #60a5fa;
+}
+
+[live-theme="dark"] .pf-link a {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+[live-theme="dark"] .pf-link a:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+[live-theme="dark"] .image img {
+  border-color: #3b82f6;
 }

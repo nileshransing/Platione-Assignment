@@ -24,8 +24,8 @@
               <li><a href="#Personal_Details">Personal Details</a></li>       
             <li><a href="#Achievements">Achievements </a></li>
                <li><a href="#Portfolio_Links">Portfolio</a></li>
-
         </ul>
+        <button class="Dark-theme" onclick="mode()">Dark Theme</button>
     </nav>
 </div>
 </header>
@@ -179,13 +179,13 @@
         <h2 id="ph2">Personal Details</h2>
     </div>
     <div id="Personal_Details" class="section">
-        <p> <strong>Name       :</strong>Nilesh Sanjay Ransing</p>
-        <P> <Strong>DOB        :</Strong>01-09-2002</P>
-        <P> <Strong>Role       :</Strong>Frontend Developer </P>
-        <P> <Strong>Address    :</Strong>Takali Kade, Ahmednagar, Maharashtra — 413701 </P>
-        <P> <Strong>Languages  :</Strong>English, Hindi, Marathi</P>
-        <P> <Strong>Phone No   :</Strong>9921747532 </P>
-        <p> <strong>Email      :</strong>ransingnilesh7532@gmail.com </p>
+        <p> <strong>Name       :</strong><span>Nilesh Sanjay Ransing</span></p>
+        <P> <Strong>DOB        :</Strong> <span>01-09-2002</span></P>
+        <P> <Strong>Role       :</Strong> <span>Frontend Developer</span> </P>
+        <P> <Strong>Address    :</Strong> <span>Takali Kade, Ahmednagar, Maharashtra — 413701</span> </P>
+        <P> <Strong>Languages  :</Strong> <span>English, Hindi, Marathi</span></P>
+        <P> <Strong>Phone No   :</Strong> <span>9921747532</span> </P>
+        <p> <strong>Email      :</strong> <span>ransingnilesh7532@gmail.com </span></p>
 </section>
 
 <!-- Achievements & Curricular Activities -->
@@ -239,6 +239,22 @@
     </div>
   </div>
 </section>
+
+<!-- dark mode -->
+<script>
+  function mode() {
+    const html = document.documentElement;
+    const isDark = html.getAttribute("live-theme") === "dark";
+
+    if (isDark) {
+      html.removeAttribute("live-theme");
+      localStorage.setItem("theme", "light");
+    } else {
+      html.setAttribute("live-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    }
+  }
+</script>
 
 
 </body>
