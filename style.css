@@ -411,3 +411,60 @@ padding: 0 24px;
     font-size: 20px;
   }
 }
+
+/* ================================= */
+/* Achievements & Curricular Activities */
+
+.a-h {
+  background-color: #ffffff;
+}
+
+.h-box {
+  background-color: #f1f5ff;
+  padding: 20px 24px;
+  border-left: 4px solid var(--accent, #3b82f6);
+  border-radius: 6px;
+  margin-bottom: 28px;
+  margin-left: 25px;
+}
+
+.highlight-box h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.s-list h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111827;
+}
+.s-list{
+  margin-left: 25px;
+}
+
+.h-box ul,
+.s-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.h-box li,
+.s-list li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 12px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.h-box li::before,
+.s-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent, #3b82f6);
+}
