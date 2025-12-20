@@ -25,7 +25,7 @@ h2 {
 /* NavBar */
 
 .head1 {
- background-color: #ffffff;
+ background-color: #0f172a;
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
@@ -48,7 +48,7 @@ nav {
 .name {
   font-size: 18px;
   font-weight: 600;
-  color: #1f2937;
+   color: #ffffff;
 }
 
 
@@ -62,10 +62,11 @@ nav {
 
 .navbar a {
   text-decoration: none;
-  color: #1f2937;
+  color: #f5f7f9;
   font-size: 14px;
   font-weight: 500;
   padding-bottom: 4px;
+   transition: color 0.2s ease;
 }
 
 .navbar a:hover {
@@ -89,7 +90,7 @@ nav {
   color: #e5e7eb;
 }
 
-.home-container {
+.h-container {
   max-width: 1200px;
 margin: 0 auto;
 padding: 0 24px;
@@ -99,34 +100,34 @@ padding: 0 24px;
   justify-content: space-between;
   gap: 60px;
 }
-.home-text {
+.h-text {
   max-width: 600px;
 }
 
-.home-tag {
+.h-tag {
   font-size: 13px;
   letter-spacing: 2px;
   color: #3b82f6;
   font-weight: 600;
 }
 
-.home-text h1 {
+.h-text h1 {
   font-size: 48px;
   margin: 16px 0;
   color: #ffffff;
 }
 
-.home-text h1 span {
+.h-text h1 span {
   color: #3b82f6;
 }
 
-.home-text p {
+.h-text p {
   font-size: 15px;
-  line-height: 1.8;
+  line-height: 1.9;
   color: #cbd5e1;
   margin-bottom: 24px;
 }
-.home-buttons {
+.h-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -140,12 +141,12 @@ padding: 0 24px;
   font-weight: 500;
 }
 
-.btn.primary {
+.btn.btn1 {
   background-color: #3b82f6;
   color: #020617;
 }
 
-.btn.secondary {
+.btn.btn2 {
   border: 1px solid #3b82f6;
   color: #ffffff;
 }
@@ -160,16 +161,16 @@ padding: 0 24px;
 }
 
 @media (max-width: 900px) {
-  .home-container {
+  .h-container {
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .home-text h1 {
+  .h-text h1 {
     font-size: 36px;
   }
 
-  .home-buttons {
+  .h-buttons {
     justify-content: center;
   }
 }
@@ -187,7 +188,7 @@ padding: 0 24px;
  margin-right: 50px;
   padding: 18px 20px;
   border-bottom: 1px solid #e5e7eb;
-   background-color: #f1f5ff;  
+   background-color: #ffffff;  
     
 }
 .education:hover {
@@ -250,7 +251,9 @@ padding: 0 24px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+#p-header{
+  margin-left: 15px;
+}
 .p-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
@@ -313,9 +316,14 @@ padding: 0 24px;
 /*  Skills & Tools */
 
 #Skills-Tools {
-   background-color: #ffffff;
+   background-color: #f1f5ff;
   max-width: 1000px;
   margin: 40px auto;
+}
+.s-header{
+  margin-left: 5px;
+  margin-bottom: 25px;
+
 }
 
 .skill-r {
@@ -361,7 +369,7 @@ padding: 0 24px;
 .section {
   background-color: #ffffff;
   padding: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   background-color: #f8fafc;
@@ -419,40 +427,40 @@ padding: 0 24px;
   background-color: #ffffff;
 }
 
-.h-box {
+.A-box {
   background-color: #f1f5ff;
   padding: 20px 24px;
   border-left: 4px solid var(--accent, #3b82f6);
   border-radius: 6px;
   margin-bottom: 28px;
-  margin-left: 25px;
+  margin: 0px 90px;
 }
 
-.highlight-box h3 {
+.A-box h3 {
   font-size: 17px;
   font-weight: 600;
   margin-bottom: 12px;
   color: #111827;
 }
 
-.s-list h3 {
+.A-list h3 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 15px;
   color: #111827;
 }
-.s-list{
-  margin-left: 25px;
+.A-list{
+  margin:20px 100px;
 }
 
-.h-box ul,
-.s-list ul {
+.A-box ul,
+.A-list ul {
   list-style: none;
   padding: 0;
 }
 
-.h-box li,
-.s-list li {
+.A-box li,
+.A-list li {
   font-size: 14px;
   line-height: 1.7;
   color: #475569;
@@ -461,10 +469,49 @@ padding: 0 24px;
   position: relative;
 }
 
-.h-box li::before,
-.s-list li::before {
+.A-box li::before,
+.A-list li::before {
   content: "–";
   position: absolute;
   left: 0;
   color: var(--accent, #3b82f6);
+}
+
+/* ========================= */
+/* Portfolio Links  */
+
+.pf-section{
+  max-width: 970px;
+  margin: 20px 120px;
+  padding: 20px 35px;
+}
+.pf-header
+{
+  margin-left: 5px;
+}
+.pf-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.pf-link a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pf-link a:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  .pf-link {
+    justify-content: center;
+  }
 }
