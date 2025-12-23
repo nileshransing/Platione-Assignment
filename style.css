@@ -479,7 +479,7 @@ padding: 0 24px;
   content: "–";
   position: absolute;
   left: 0;
-  /* color: var(--accent, #3b82f6); */
+  
   color: #3b82f6;
 }
 
@@ -670,6 +670,8 @@ h4{
 
 
 }
+
+/* testimonials */
 [live-theme="dark"] .card {
    background-color: #0f172a;
 
